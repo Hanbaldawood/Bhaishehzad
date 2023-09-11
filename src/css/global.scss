@@ -1,0 +1,293 @@
+@font-face {
+	font-family: "brcandor";
+	src: url("../../fonts/Brink-BR-Candor-Regular.ttf");
+	font-weight: normal;
+}
+@font-face {
+	font-family: "brcandor";
+	src: url("../../fonts/Brink-BR-Candor-Medium.ttf");
+	font-weight: 500;
+}
+@font-face {
+	font-family: "brcandor";
+	src: url("../../fonts/Brink-BR-Candor-SemiBold.ttf");
+	font-weight: 600;
+}
+@font-face {
+	font-family: "brcandor";
+	src: url("../../fonts/Brink-BR-Candor-Bold.ttf");
+	font-weight: 800;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin-top: 0px;
+
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: "brcandor";
+}
+p {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #b1b1b1;
+}
+ul,
+ol {
+	line-height: 1.7;
+}
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+	th,
+	td {
+		border: 1px solid #e8eced;
+		padding: 10px 12px;
+	}
+}
+pre {
+	background: #eee;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+blockquote {
+	font-size: 1rem;
+	padding: 2rem 2rem 2rem 5rem;
+	position: relative;
+	border: none;
+	margin: 2rem 0 2.5rem 0;
+	min-height: 3rem;
+	background: rgba(0, 0, 0, 0.02);
+	text-rendering: geometricPrecision;
+	letter-spacing: 0.02em;
+	p {
+		margin-bottom: 0px;
+		font-style: italic;
+	}
+	&::before {
+		content: "";
+		width: 4rem;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath d='M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z'/%3E%3C/svg%3E");
+		height: 3rem;
+		background-repeat: no-repeat;
+		position: absolute;
+		left: 1.5rem;
+		top: 1rem;
+	}
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+	font-size: 40px;
+}
+blockquote::after,
+q::after {
+	font-size: 40px;
+}
+small {
+	font-size: 80%;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+}
+sub {
+	bottom: -0.25em;
+}
+sup {
+	top: -0.5em;
+}
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+dl dt + dd {
+	margin: 0;
+}
+dl dt,
+dl dd {
+	margin-top: 1rem;
+	line-height: 1.9em;
+}
+dl dt {
+	font-weight: bold;
+}
+abbr[title] {
+	border-bottom: none;
+	text-decoration: underline;
+	text-decoration: underline dotted;
+}
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+address {
+	margin: 0 0 1.5em;
+}
+
+a {
+	color: #fff;
+	&:hover {
+		color: #0F0;
+	}
+}
+.container {
+	max-width: 1230px;
+	margin: auto;
+	position: relative;
+	width: 100%;
+}
+
+.text-white {
+	color: #fff;
+}
+.font-bold {
+	font-weight: 900;
+}
+.font-medium {
+	font-weight: 700;
+}
+.reverse-row {
+	flex-direction: row-reverse;
+}
+
+.global-btn {
+	padding: 16px 35px;
+	background-color: #0f0;
+	color: #1f1f1f;
+	text-decoration: none;
+	font-size: 17px;
+	line-height: normal;
+	font-weight: 500;
+	text-align: center;
+	border-radius: 90px;
+	transition: all 1s;
+	display: inline-block;
+	cursor: pointer;
+	&:hover {
+		color: #fff;
+		background-color: #000;
+		transition: all 1s;
+	}
+	&.dark-btn {
+		background: #000;
+		color: #fff;
+		&:hover {
+			background-color: #0f0;
+			color: #1f1f1f;
+		}
+	}
+}
